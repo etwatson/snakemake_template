@@ -32,9 +32,9 @@ my-pipeline/
 │  └─ r_bio.yaml
 ├─ rules/                            # modular rule files (one per feature area)
 │  ├─ core.smk                       # example: preprocessing/core steps
-│  ├─ featureA.smk                   # example: TE annotation
-│  ├─ featureB.smk                   # example: methylation clustering
-│  ├─ featureC.smk                   # example: family/domain tagging
+│  ├─ featureA.smk                   
+│  ├─ featureB.smk                   
+│  ├─ featureC.smk                   
 │  └─ merge.smk                      # final collation and exports
 ├─ scripts/                          # user scripts called by rules
 │  ├─ helper.R
@@ -62,8 +62,8 @@ threads: 8
 # Globally toggle modules
 modules:
   core:       true   # required base steps
-  featureA:   true   # e.g., TE annotation
-  featureB:   true   # e.g., methylation clustering
+  featureA:   true   
+  featureB:   true   
   featureC:   true   # e.g., HMM/domain tagging
   merge:      true   # produce final outputs
 
